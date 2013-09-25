@@ -1,0 +1,68 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    cprice404/inifile (0.10.4)
+    dalen/puppetdbquery (1.3.3)
+    puppetlabs/apache (0.9.0)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.4.0)
+    puppetlabs/apt (1.3.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/concat (1.0.0-rc1)
+    puppetlabs/firewall (0.4.2)
+    puppetlabs/inifile (1.0.0)
+    puppetlabs/ntp (2.0.1)
+      puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/postgresql (2.5.0)
+      puppetlabs/apt (< 2.0.0, >= 1.1.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+      ripienaar/concat (>= 0.2.0)
+    puppetlabs/puppetdb (1.6.0)
+      cprice404/inifile (>= 0.10.3)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/postgresql (~> 2)
+      puppetlabs/stdlib (>= 2.2.0)
+    puppetlabs/stdlib (4.1.0)
+    ripienaar/concat (0.2.0)
+
+GIT
+  remote: https://github.com/jbouse/puppetlabs-postgresql.git
+  ref: master
+  sha: 1a53de99d51cbf9bee05d42158a1bab8c6c9b92c
+  specs:
+    postgresql (2.5.0)
+      puppetlabs/apt (< 2.0.0, >= 1.1.0)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+
+GIT
+  remote: https://github.com/jbouse/puppetlabs-puppet.git
+  ref: master
+  sha: 11982abfc6a9309af996ab8a1ef93218cfc4c91a
+  specs:
+    puppet (0.0.15)
+      puppetlabs/apache (>= 0.8.0)
+      puppetlabs/inifile (>= 1.0.0)
+      puppetlabs/puppetdb (>= 1.6.0)
+
+GIT
+  remote: https://github.com/jbouse/puppetlabs-puppetdb.git
+  ref: ssl-setup
+  sha: bfb9a2b6e0e853e56d62a7445a4ccba028c491e6
+  specs:
+    puppetdb (1.6.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/inifile (>= 1.0.0)
+      puppetlabs/postgresql (>= 2.5.0)
+      puppetlabs/stdlib (>= 2.2.0)
+
+DEPENDENCIES
+  dalen/puppetdbquery (>= 0)
+  postgresql (>= 0)
+  puppet (>= 0)
+  puppetdb (>= 0)
+  puppetlabs/ntp (>= 0)
+  puppetlabs/stdlib (>= 0)
+
