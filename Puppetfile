@@ -6,6 +6,9 @@ mod 'dalen/puppetdbquery'
 mod 'zleslie/pxe'
 mod 'zleslie/dhcp'
 
+mod 'thias/postfix',
+    :git => 'https://github.com/jbouse/puppet-postfix.git'
+
 mod 'puppetlabs/puppet',
     :git => 'https://github.com/jbouse/puppetlabs-puppet.git'
 

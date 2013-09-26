@@ -26,6 +26,13 @@ FORGE
       xaque208/permute (>= 0.0.0)
 
 GIT
+  remote: https://github.com/jbouse/puppet-postfix.git
+  ref: master
+  sha: 06e08302000ee9f51a51a889a3360d66299d0406
+  specs:
+    thias/postfix (0.2.3)
+
+GIT
   remote: https://github.com/jbouse/puppetlabs-postgresql.git
   ref: master
   sha: 1a53de99d51cbf9bee05d42158a1bab8c6c9b92c
@@ -71,6 +78,7 @@ DEPENDENCIES
   puppetlabs/puppet (>= 0)
   puppetlabs/puppetdb (>= 0)
   puppetlabs/stdlib (>= 0)
+  thias/postfix (>= 0)
   xaque208/permute (>= 0)
   zleslie/dhcp (>= 0)
   zleslie/pxe (>= 0)
