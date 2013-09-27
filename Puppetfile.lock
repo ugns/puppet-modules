@@ -26,6 +26,21 @@ FORGE
       xaque208/permute (>= 0.0.0)
 
 GIT
+  remote: https://github.com/jbouse/puppet-common.git
+  ref: master
+  sha: 83ef8cff187c93bea794f4f9e7b5f1ca7f55d5d0
+  specs:
+    ugns/common (0.1.0)
+
+GIT
+  remote: https://github.com/jbouse/puppet-cron.git
+  ref: master
+  sha: 7a74139abeb337fa563d56b04a2cb538daa1bac9
+  specs:
+    ugns/cron (0.1.0)
+      puppetlabs/stdlib (>= 3.0.0)
+
+GIT
   remote: https://github.com/jbouse/puppet-postfix.git
   ref: master
   sha: 06e08302000ee9f51a51a889a3360d66299d0406
@@ -71,6 +86,17 @@ GIT
   specs:
     xaque208/permute (0.0.1)
 
+GIT
+  remote: ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git
+  ref: master
+  sha: adcb8ef6974b07e4d68426e40d11530d3ce9617e
+  specs:
+    ugns/gaga (0.1.0)
+      puppetlabs/apache (>= 0.8.0)
+      puppetlabs/stdlib (>= 3.2.0)
+      ugns/common (>= 0.1.0)
+      ugns/cron (>= 0.1.0)
+
 DEPENDENCIES
   dalen/puppetdbquery (>= 0)
   puppetlabs/ntp (>= 0)
@@ -79,6 +105,9 @@ DEPENDENCIES
   puppetlabs/puppetdb (>= 0)
   puppetlabs/stdlib (>= 0)
   thias/postfix (>= 0)
+  ugns/common (>= 0)
+  ugns/cron (>= 0)
+  ugns/gaga (>= 0)
   xaque208/permute (>= 0)
   zleslie/dhcp (>= 0)
   zleslie/pxe (>= 0)

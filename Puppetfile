@@ -21,3 +21,12 @@ mod 'puppetlabs/postgresql',
 
 mod 'xaque208/permute',
     :git => 'https://github.com/xaque208/puppet-permute.git'
+
+mod 'ugns/common',
+    :git => 'https://github.com/jbouse/puppet-common.git'
+
+mod 'ugns/cron',
+    :git => 'https://github.com/jbouse/puppet-cron.git'
+
+mod 'ugns/gaga',
+    :git => 'ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git'
