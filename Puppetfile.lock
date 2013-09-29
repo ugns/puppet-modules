@@ -28,7 +28,7 @@ FORGE
 GIT
   remote: https://github.com/jbouse/puppet-common.git
   ref: master
-  sha: 83ef8cff187c93bea794f4f9e7b5f1ca7f55d5d0
+  sha: 59147153d506fc3f94dec053321ead186c58634e
   specs:
     ugns/common (0.1.0)
 
