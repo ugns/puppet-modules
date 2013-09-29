@@ -89,7 +89,7 @@ GIT
 GIT
   remote: ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git
   ref: master
-  sha: adcb8ef6974b07e4d68426e40d11530d3ce9617e
+  sha: 5e6abc7d9dd34d8795fdff940e0267d9552f640a
   specs:
     ugns/gaga (0.1.0)
       puppetlabs/apache (>= 0.8.0)
