@@ -41,6 +41,14 @@ GIT
       puppetlabs/stdlib (>= 3.0.0)
 
 GIT
+  remote: https://github.com/jbouse/puppet-jenkins.git
+  ref: master
+  sha: 98dc9b50ac81032eb9b4f9f0a04aa20c2e7d8a9a
+  specs:
+    ugns/jenkins (0.1.0)
+      puppetlabs/apt (< 2.0.0, >= 1.1.0)
+
+GIT
   remote: https://github.com/jbouse/puppet-postfix.git
   ref: master
   sha: 06e08302000ee9f51a51a889a3360d66299d0406
@@ -108,6 +116,7 @@ DEPENDENCIES
   ugns/common (>= 0)
   ugns/cron (>= 0)
   ugns/gaga (>= 0)
+  ugns/jenkins (>= 0)
   xaque208/permute (>= 0)
   zleslie/dhcp (>= 0)
   zleslie/pxe (>= 0)

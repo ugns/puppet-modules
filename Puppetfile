@@ -22,6 +22,9 @@ mod 'puppetlabs/postgresql',
 mod 'xaque208/permute',
     :git => 'https://github.com/xaque208/puppet-permute.git'
 
+mod 'ugns/jenkins',
+    :git => 'https://github.com/jbouse/puppet-jenkins.git'
+
 mod 'ugns/common',
     :git => 'https://github.com/jbouse/puppet-common.git'
 
