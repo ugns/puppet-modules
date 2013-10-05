@@ -28,14 +28,14 @@ FORGE
 GIT
   remote: https://github.com/jbouse/puppet-common.git
   ref: master
-  sha: 59147153d506fc3f94dec053321ead186c58634e
+  sha: 1b103d7b65a1dac91597de84e25daed02850dd38
   specs:
     ugns/common (0.1.0)
 
 GIT
   remote: https://github.com/jbouse/puppet-cron.git
   ref: master
-  sha: 7a74139abeb337fa563d56b04a2cb538daa1bac9
+  sha: ab731c85bd2c5c82355aacdc7b99921dc1400031
   specs:
     ugns/cron (0.1.0)
       puppetlabs/stdlib (>= 3.0.0)
@@ -43,7 +43,7 @@ GIT
 GIT
   remote: https://github.com/jbouse/puppet-jenkins.git
   ref: master
-  sha: 98dc9b50ac81032eb9b4f9f0a04aa20c2e7d8a9a
+  sha: 898d47fc1ba01c97575c4db064681720173ca5e9
   specs:
     ugns/jenkins (0.1.0)
       puppetlabs/apt (< 2.0.0, >= 1.1.0)
@@ -97,7 +97,7 @@ GIT
 GIT
   remote: ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git
   ref: master
-  sha: 92d920cbc73255d42ffa1e5c03f787df9e3934b7
+  sha: 5a8b458517cfd4faa36e7bea0d1e4381d54028f4
   specs:
     ugns/gaga (0.1.0)
       puppetlabs/apache (>= 0.8.0)
