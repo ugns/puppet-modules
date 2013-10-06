@@ -27,10 +27,10 @@ FORGE
 
 GIT
   remote: https://github.com/jbouse/puppet-account.git
-  ref: master
-  sha: c0d9f26c1843c0f54d17f98611cc262f2801cece
+  ref: develop
+  sha: 3a260a693d56a24f7bbeb704b59ee44a397a62ae
   specs:
-    puppet/account (0.0.5)
+    puppet/account (0.0.4)
 
 GIT
   remote: https://github.com/jbouse/puppet-common.git
