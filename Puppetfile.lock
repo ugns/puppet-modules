@@ -26,6 +26,13 @@ FORGE
       xaque208/permute (>= 0.0.0)
 
 GIT
+  remote: https://github.com/jbouse/puppet-account.git
+  ref: master
+  sha: c0d9f26c1843c0f54d17f98611cc262f2801cece
+  specs:
+    puppet/account (0.0.5)
+
+GIT
   remote: https://github.com/jbouse/puppet-common.git
   ref: master
   sha: 1b103d7b65a1dac91597de84e25daed02850dd38
@@ -107,6 +114,7 @@ GIT
 
 DEPENDENCIES
   dalen/puppetdbquery (>= 0)
+  puppet/account (>= 0)
   puppetlabs/ntp (>= 0)
   puppetlabs/postgresql (>= 0)
   puppetlabs/puppet (>= 0)
