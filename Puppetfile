@@ -23,7 +23,8 @@ mod 'xaque208/permute',
     :git => 'https://github.com/xaque208/puppet-permute.git'
 
 mod 'puppet/account',
-    :git => 'https://github.com/jbouse/puppet-account.git'
+    :git => 'https://github.com/jbouse/puppet-account.git',
+    :ref => 'develop'
 
 mod 'ugns/jenkins',
     :git => 'https://github.com/jbouse/puppet-jenkins.git'
