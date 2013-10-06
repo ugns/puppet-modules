@@ -35,7 +35,7 @@ GIT
 GIT
   remote: https://github.com/jbouse/puppet-common.git
   ref: master
-  sha: 1b103d7b65a1dac91597de84e25daed02850dd38
+  sha: b46ee743431ad931c2f0553b2bb63ff93d022040
   specs:
     ugns/common (0.1.0)
 
