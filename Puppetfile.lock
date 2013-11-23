@@ -1,36 +1,36 @@
 FORGE
   remote: http://forge.puppetlabs.com
   specs:
+    arnoudj/sudo (1.1.1)
     dalen/puppetdbquery (1.3.3)
     puppetlabs/apache (0.9.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
-    puppetlabs/apt (1.3.0)
+    puppetlabs/apt (1.4.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.0.0-rc1)
     puppetlabs/firewall (0.4.2)
     puppetlabs/inifile (1.0.0)
-    puppetlabs/ntp (2.0.1)
+    puppetlabs/ntp (3.0.0-rc1)
       puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/postgresql (3.2.0)
+      puppetlabs/apt (< 2.0.0, >= 1.1.0)
+      puppetlabs/concat (< 2.0.0, >= 1.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
+    puppetlabs/puppetdb (3.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/inifile (~> 1)
+      puppetlabs/postgresql (< 4.0.0, >= 3.1.0)
+      puppetlabs/stdlib (>= 2.2.0)
     puppetlabs/stdlib (4.1.0)
-    puppetlabs/tftp (0.2.1)
-      puppetlabs/xinetd (>= 1.1.0)
-    puppetlabs/xinetd (1.2.0)
-      puppetlabs/stdlib (>= 2.2.1)
-    ripienaar/concat (0.2.0)
-    zleslie/dhcp (1.1.1)
-      ripienaar/concat (>= 0.1.0)
-    zleslie/pxe (0.0.7)
-      puppetlabs/tftp (>= 0.0.0)
-      ripienaar/concat (>= 0.0.0)
-      xaque208/permute (>= 0.0.0)
 
 GIT
   remote: https://github.com/jbouse/puppet-account.git
   ref: develop
-  sha: 3a260a693d56a24f7bbeb704b59ee44a397a62ae
+  sha: b2f9a98f26590290e24e7b257505b3c6ce974064
   specs:
-    puppet/account (0.0.4)
+    puppet/account (0.0.5)
 
 GIT
   remote: https://github.com/jbouse/puppet-common.git
@@ -48,6 +48,13 @@ GIT
       puppetlabs/stdlib (>= 3.0.0)
 
 GIT
+  remote: https://github.com/jbouse/puppet-hipchat.git
+  ref: master
+  sha: 100b75eaaa5c4a6ea5165cbc4a843c8a7fc64bbc
+  specs:
+    jamtur01/hipchat (0.3.1)
+
+GIT
   remote: https://github.com/jbouse/puppet-jenkins.git
   ref: master
   sha: 898d47fc1ba01c97575c4db064681720173ca5e9
@@ -63,43 +70,14 @@ GIT
     thias/postfix (0.2.3)
 
 GIT
-  remote: https://github.com/jbouse/puppetlabs-postgresql.git
-  ref: master
-  sha: 1a53de99d51cbf9bee05d42158a1bab8c6c9b92c
-  specs:
-    puppetlabs/postgresql (2.5.0)
-      puppetlabs/apt (< 2.0.0, >= 1.1.0)
-      puppetlabs/concat (< 2.0.0, >= 1.0.0)
-      puppetlabs/firewall (>= 0.0.4)
-      puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-
-GIT
   remote: https://github.com/jbouse/puppetlabs-puppet.git
   ref: master
-  sha: 11982abfc6a9309af996ab8a1ef93218cfc4c91a
+  sha: 9d91696f01b51a9497cf10817f44ddbd3b87b73d
   specs:
-    puppetlabs/puppet (0.0.15)
+    puppetlabs/puppet (0.0.18)
       puppetlabs/apache (>= 0.8.0)
       puppetlabs/inifile (>= 1.0.0)
-      puppetlabs/puppetdb (>= 1.6.0)
-
-GIT
-  remote: https://github.com/jbouse/puppetlabs-puppetdb.git
-  ref: ssl-setup
-  sha: bfb9a2b6e0e853e56d62a7445a4ccba028c491e6
-  specs:
-    puppetlabs/puppetdb (1.6.0)
-      puppetlabs/firewall (>= 0.0.4)
-      puppetlabs/inifile (>= 1.0.0)
-      puppetlabs/postgresql (>= 2.5.0)
-      puppetlabs/stdlib (>= 2.2.0)
-
-GIT
-  remote: https://github.com/xaque208/puppet-permute.git
-  ref: master
-  sha: 1bf40d3f7d4d854ca5156e2d4fcf97cfb2e55ea3
-  specs:
-    xaque208/permute (0.0.1)
+      puppetlabs/puppetdb (>= 2.0.0)
 
 GIT
   remote: ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git
@@ -113,7 +91,9 @@ GIT
       ugns/cron (>= 0.1.0)
 
 DEPENDENCIES
+  arnoudj/sudo (>= 0)
   dalen/puppetdbquery (>= 0)
+  jamtur01/hipchat (>= 0)
   puppet/account (>= 0)
   puppetlabs/ntp (>= 0)
   puppetlabs/postgresql (>= 0)
@@ -125,7 +105,4 @@ DEPENDENCIES
   ugns/cron (>= 0)
   ugns/gaga (>= 0)
   ugns/jenkins (>= 0)
-  xaque208/permute (>= 0)
-  zleslie/dhcp (>= 0)
-  zleslie/pxe (>= 0)
 
