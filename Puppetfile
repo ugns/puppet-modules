@@ -1,11 +1,12 @@
 forge "http://forge.puppetlabs.com"
 
-mod 'puppetlabs/stdlib'
-mod 'puppetlabs/ntp'
+mod 'arnoudj/sudo'
 mod 'dalen/puppetdbquery'
+mod 'puppetlabs/mcollective'
+mod 'puppetlabs/ntp'
 mod 'puppetlabs/postgresql'
 mod 'puppetlabs/puppetdb'
-mod 'arnoudj/sudo'
+mod 'puppetlabs/stdlib'
 
 mod 'thias/postfix',
     :git => 'https://github.com/jbouse/puppet-postfix.git'
@@ -30,8 +31,8 @@ mod 'ugns/common',
 mod 'ugns/cron',
     :git => 'https://github.com/jbouse/puppet-cron.git'
 
-mod 'ugns/gaga',
-    :git => 'ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git'
+mod 'jbouse/gaga',
+    :git => 'git@github.com:UGNS/jbouse-gaga.git'
 
 mod 'jamtur01/hipchat',
     :git => 'https://github.com/jbouse/puppet-hipchat.git'

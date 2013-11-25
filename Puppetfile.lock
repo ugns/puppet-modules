@@ -3,6 +3,13 @@ FORGE
   specs:
     arnoudj/sudo (1.1.1)
     dalen/puppetdbquery (1.3.3)
+    garethr/erlang (0.2.0)
+      puppetlabs/apt (>= 0.0.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      stahnma/epel (>= 0.0.0)
+    puppetlabs/activemq (0.2.0)
+      puppetlabs/java (>= 0.1.0)
+      puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/apache (0.9.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 2.4.0)
@@ -11,6 +18,16 @@ FORGE
     puppetlabs/concat (1.0.0-rc1)
     puppetlabs/firewall (0.4.2)
     puppetlabs/inifile (1.0.0)
+    puppetlabs/java (1.0.1)
+      puppetlabs/stdlib (>= 0.1.6)
+    puppetlabs/java_ks (1.2.0)
+    puppetlabs/mcollective (1.1.3)
+      garethr/erlang (>= 0.0.0)
+      puppetlabs/activemq (~> 0.2)
+      puppetlabs/java_ks (>= 0.0.0)
+      puppetlabs/rabbitmq (>= 0.0.0)
+      puppetlabs/stdlib (>= 0.0.0)
+      richardc/datacat (~> 0.4)
     puppetlabs/ntp (3.0.0-rc1)
       puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/postgresql (3.2.0)
@@ -23,7 +40,24 @@ FORGE
       puppetlabs/inifile (~> 1)
       puppetlabs/postgresql (< 4.0.0, >= 3.1.0)
       puppetlabs/stdlib (>= 2.2.0)
+    puppetlabs/rabbitmq (3.1.0)
+      garethr/erlang (>= 0.1.0)
+      puppetlabs/apt (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.0.0)
     puppetlabs/stdlib (4.1.0)
+    richardc/datacat (0.4.2)
+    stahnma/epel (0.0.5)
+
+GIT
+  remote: git@github.com:UGNS/jbouse-gaga.git
+  ref: master
+  sha: a7b532d71b8ab651dc017fe5a42fd445d4210073
+  specs:
+    jbouse/gaga (0.1.0)
+      puppetlabs/apache (>= 0.8.0)
+      puppetlabs/stdlib (>= 3.2.0)
+      ugns/common (>= 0.1.0)
+      ugns/cron (>= 0.1.0)
 
 GIT
   remote: https://github.com/jbouse/puppet-account.git
@@ -35,7 +69,7 @@ GIT
 GIT
   remote: https://github.com/jbouse/puppet-common.git
   ref: master
-  sha: b46ee743431ad931c2f0553b2bb63ff93d022040
+  sha: 494eb4dec10686213fe553ca7253204f866e8294
   specs:
     ugns/common (0.1.0)
 
@@ -79,22 +113,13 @@ GIT
       puppetlabs/inifile (>= 1.0.0)
       puppetlabs/puppetdb (>= 2.0.0)
 
-GIT
-  remote: ssh://git@repo.undergrid.net:7999/ugns/ugns-gaga.git
-  ref: master
-  sha: 45326213d56cd6a74c8a8e72028f51566a095e7f
-  specs:
-    ugns/gaga (0.1.0)
-      puppetlabs/apache (>= 0.8.0)
-      puppetlabs/stdlib (>= 3.2.0)
-      ugns/common (>= 0.1.0)
-      ugns/cron (>= 0.1.0)
-
 DEPENDENCIES
   arnoudj/sudo (>= 0)
   dalen/puppetdbquery (>= 0)
   jamtur01/hipchat (>= 0)
+  jbouse/gaga (>= 0)
   puppet/account (>= 0)
+  puppetlabs/mcollective (>= 0)
   puppetlabs/ntp (>= 0)
   puppetlabs/postgresql (>= 0)
   puppetlabs/puppet (>= 0)
@@ -103,6 +128,5 @@ DEPENDENCIES
   thias/postfix (>= 0)
   ugns/common (>= 0)
   ugns/cron (>= 0)
-  ugns/gaga (>= 0)
   ugns/jenkins (>= 0)
 
